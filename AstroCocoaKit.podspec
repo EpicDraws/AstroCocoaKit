@@ -17,7 +17,10 @@ Pod::Spec.new do |s|
   s.social_media_url   = "http://twitter.com/onekiloparsec"
 
   s.platform     = :osx
-  s.osx.deployment_target = "10.7"
+  
+  #  When using multiple platforms
+  s.ios.deployment_target = "9.0"
+  s.osx.deployment_target = "10.10"
 
   s.source       = { :git => "https://github.com/onekiloparsec/AstroCocoaKit.git", :tag => "0.1.0" }
   s.source_files = "AstroCocoaKit", "AstroCocoaKit/**/*.{c,h,m}"
